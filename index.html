@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Space Background with Animated Objects -->
+    <div class="background">
+        <div class="space-object star" id="star1"></div>
+        <div class="space-object star" id="star2"></div>
+        <div class="space-object planet" id="planet1"></div>
+        <div class="space-object comet" id="comet1"></div>
+        <div class="space-object asteroid" id="asteroid1"></div>
+        <div class="space-object satellite" id="satellite1"></div>
+    </div>
+
+    <!-- Header with Name and Briefcase -->
+    <header>
+        <h1>Your Name</h1>
+        <div class="briefcase-container" onclick="openBriefcase()">
+            <img src="briefcase-closed.png" alt="Briefcase Icon" id="briefcase" class="briefcase closed">
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>If seedhi baat no bakwas was a person, then it would be me but I can yap a lot! Like literal yap.</p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Creative Strategist</strong> - Netsavvies & Hungrito<br>May 2021 - December 2023<br>Worked for Hyatt, Book My Show, Vadilal, Water.org, Sankalp, and food fest events.</li>
+            <li><strong>Content Coordinator</strong> - HFN Youth<br>August 2020 - May 2022<br>Coordinated content creation, aligning teams for timely, on-brand delivery.</li>
+            <li><strong>Strategy and Content Intern</strong> - Saathi Eco Innovative Pvt Ltd<br>May 2019-June 2019<br>Worked on the awareness of the eco-friendly campaign for Tier 2-3 cities.</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Miami Ad School</strong> - PG in Advertising</li>
+            <li><strong>Adani</strong> - BE ICT</li>
+        </ul>
+    </section>
+
+    <!-- Modal for PDF Display -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePDF()">&times;</span>
+            <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
